@@ -66,6 +66,17 @@ The MOSFET gate is switched by a TL494-based PWM controller board, buffered thro
 
 ---
 
+## Passive Components
+
+| Component | Hardware Value | Simulation Value (`simulation1.slx`) |
+|---|---|---|
+| Boost Inductor (L) | **1 mH** | 4.5 mH |
+| Output Capacitor (C) | **220 µF** | 25 µF |
+
+> Note: the Simulink model uses different L and C values (4.5 mH, 25 µF) than the physical hardware build (1 mH, 220 µF) — likely an earlier design iteration that wasn't updated to match the final hardware.
+
+---
+
 ## Driver Output (Measured)
 
 | Quantity | Measured Value |
